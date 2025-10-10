@@ -1,14 +1,10 @@
 import React from "react";
-
 import Hero from "./Hero";
 import LeftSection from "./LeftSection";
 import RightSection from "./RightSection";
 import Universe from "./Universe";
 
-import Navbar from "../Navbar";
-import Footer from "../Footer";
-
-function PricingPage() {
+function ProductsPage() {
   return (
     <>
       <Hero />
@@ -24,7 +20,7 @@ function PricingPage() {
       <RightSection
         imageURL="media/images/console.png"
         productName="Console"
-        productDesription="The central dashboard for your Zerodha account. Gain insights into your trades and investments with in-depth reports and visualisations."
+        productDesription="The central dashboard for your Equitrade account. Gain insights into your trades and investments with in-depth reports and visualisations."
         learnMore=""
       />
       <LeftSection
@@ -51,13 +47,19 @@ function PricingPage() {
         googlePlay=""
         appStore=""
       />
-      <p className="text-center mt-5 mb-5">
-        Want to know more about our technology stack? Check out the Zerodha.tech
-        blog.
-      </p>
+      <div className="container py-5">
+        <div className="row">
+          <div className="col-lg-8 mx-auto text-center">
+            <p className="lead">
+              Want to know more about our technology stack? Check out the{" "}
+              <a href="#" className="text-decoration-none fw-semibold">Equitrade.tech blog</a>.
+            </p>
+          </div>
+        </div>
+      </div>
       <Universe />
     </>
   );
 }
 
-export default PricingPage;
+export default ProductsPage;
